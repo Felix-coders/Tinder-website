@@ -1,0 +1,27 @@
+.box {
+    width: 100px;
+    height: 150px;
+    background: #FE3C72;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px; /* Moves the box below the header */
+    z-index: 1; /* Ensures the box stays on top of background content */
+}
+
+.MatchingContent {
+    text-align: center;
+    padding: 60px 20px 20px;
+    color: #FE3C72;
+}
+
+.MatchingContent h1 {
+    margin: 40px 0 10px; /* Adds space below the box */
+    font-size: 20px;
+}
+
+.MatchingContent p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
