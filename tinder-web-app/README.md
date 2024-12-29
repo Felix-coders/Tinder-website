@@ -38,6 +38,12 @@ tinder-web-app/
 │   ├── api.js                 # (Optional) API utility to handle network requests
 │   └── utils.js               # Utility functions (e.g., formatters, event listeners)
 │
+├── public/
+│   ├── matches.html
+│   ├── messages.html
+│   ├── about-page.html
+│   ├── login.html
+│   ├── signup.html
 ├── index.html                 # Main HTML file (entry point of the app)
 ├── about.html                 # (Optional) About or other static pages
 ├── contact.html               # (Optional) Contact page or other informational pages
