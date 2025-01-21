@@ -16,6 +16,7 @@
           <a href="./public/about-page.html">About</a>
           <a href="#contact">Contact</a>
         </div>
+        <button class="mobile-menu-toggle">☰</button>
       </nav>
     </header>
 
@@ -33,7 +34,6 @@
           <img
             src="./assets/images/couple pic.png"
             alt="ጥቅሻ app interface mockup"
-            style="background-color: #e5365f"
           />
         </div>
       </section>
@@ -83,5 +83,10 @@
         <p>&copy; 2024 ጥቅሻ Dating App. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      });
+    </script>
   </body>
 </html>
