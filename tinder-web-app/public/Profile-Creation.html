@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Profile - ጥቅሻ Dating App</title>
+    <link rel="stylesheet" href="../css/create-profile.css">
+    <link href="../assets/icons/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Profile</h1>        
+        <form action="./Matches.html" method="POST">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required min="18" max="100">
+            </div>
+
+            <div class="input-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" placeholder="Write a short bio..." required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="photo-upload">Upload Photos</label>
+                <input type="file" id="photo-upload" name="photos" multiple accept="image/*" required>
+            </div>
+
+            <div class="input-group">
+                <label for="hobbies">Hobbies/Interests</label>
+                <textarea id="hobbies" name="hobbies" placeholder="What are your hobbies?" required></textarea>
+            </div>
+
+            <div class="preferences-group">
+                <div>
+                    <label for="age-range">Preferred Age Range</label>
+                    <input type="text" id="age-range" name="age-range" placeholder="e.g., 20-30" required>
+                </div>
+                <div>
+                    <label for="distance">Max Distance</label>
+                    <input type="text" id="distance" name="distance" placeholder="e.g., 10 km" required>
+                </div>
+            </div>
+
+            <button type="submit">Save Profile</button>
+        </form>
+    </div>
+
+    <script src="../js/ProfileCreation.js"></script>
+    
+</body>
+</html>
