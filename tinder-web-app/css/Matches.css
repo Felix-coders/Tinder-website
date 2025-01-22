@@ -25,3 +25,88 @@
     color: #555;
     line-height: 1.5;
 }
+
+.drop-down{
+    position: absolute;
+    width: 300px;
+    background: whitesmoke;
+    z-index: 100;
+    left: 10px;
+    top: 82px;
+    display: none;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+.drop-down a{
+    margin: 5px 10px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    border-bottom: none;
+    padding-bottom: none;
+}
+
+.visible{
+    display: flex;
+    flex-direction: column;
+}
+
+.selection{
+   width: 120px;
+   position: absolute;
+   top: 30px;
+   left: calc((380px - 120px) / 2);
+   stroke: yellow;
+}
+
+.no_sugg{
+    font-size: 20px;
+    color: darkkhaki;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.disliked{
+    animation: moveToLeft 2s ease-in-out;
+}
+
+.super_liked{
+    animation: moveTopZoom 2s ease-in-out;
+}
+
+.liked{
+    animation: moveToRight 2s ease-in-out;
+}
+
+@keyframes moveToLeft{
+    50%{
+        transform: translateX(-70%) rotate(-45deg);
+    }
+    100%{
+        transform: translate(0px) rotate(0deg);
+    }
+}
+
+@keyframes moveToRight{
+    50%{
+        transform: translateX(70%) rotate(45deg);
+    }
+    100%{
+        transform: translate(0px) rotate(0deg);
+    }
+}
+
+@keyframes moveTopZoom{
+    30%{
+        transform: translateY(30%);
+    }
+    60%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
