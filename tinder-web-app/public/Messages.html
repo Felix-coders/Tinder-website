@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/Messages.css" />
+  <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+          rel="stylesheet"
+  />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  <title>Messages</title>
+</head>
+<body>
+<div class="container">
+  <!-- Sidebar -->
+  <div class="side">
+    <div class="header">
+      <div class="avatar">
+        <img
+                src="https://randomuser.me/api/portraits/women/64.jpg"
+                alt=""
+        />
+      </div>
+      <div class="title">User Name</div>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="./Matches.html">Matches</a></li>
+        <li><a href="./Messages.html">Messages</a></li>
+      </ul>
+    </div>
+
+    <!-- Messages -->
+    <div class="messages">
+      <div class="avatar">
+        <img
+                src="https://randomuser.me/api/portraits/women/38.jpg"
+                alt=""
+        />
+      </div>
+      <div class="message">
+        <div class="user">Caroline</div>
+        <div class="text">
+          I'm good, thank you! How about you?
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Section -->
+  <div class="chat-section">
+    <div class="chat-header">
+      <h2>Chat with Caroline</h2>
+    </div>
+    <div class="chat-box" id="chat-box">
+      <div class="chat-message incoming">
+        <p>Hello! How are you doing today?</p>
+      </div>
+      <div class="chat-message outgoing">
+        <p>I'm good, thank you! How about you?</p>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input
+              type="text"
+              id="message-input"
+              placeholder="Type a message..."
+      />
+      <button id="send-button">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
