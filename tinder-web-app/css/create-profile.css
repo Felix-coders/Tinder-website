@@ -1,4 +1,4 @@
-root {
+:root {
     --primary-color: #FE3C72;
     --primary-hover: #E5365F;
     --background-color: #F3F4F6;
@@ -56,6 +56,14 @@ h1 {
     border: 1px solid var(--border-color);
     border-radius: 0.5rem;
     font-size: 1rem;
+    outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(254, 60, 114, 0.2);
 }
 
 .input-group textarea {
@@ -74,6 +82,8 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
+    margin-top: 1rem;
+    display: block;
 }
 
 button:hover {
