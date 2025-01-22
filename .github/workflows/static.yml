@@ -37,7 +37,7 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./tinder-web-app
-          destination: ./tinder-web-app/_site
+          destination: ./docs/_site  # Changed destination to docs/_site
           future: false
           verbose: true
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -49,7 +49,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload the built site from _site folder
-          path: './tinder-web-app/_site'
+          path: './docs/_site'  # Changed to match the destination path
 
       - name: Deploy to GitHub Pages
         id: deployment
