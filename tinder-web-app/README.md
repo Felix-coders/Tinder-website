@@ -1,11 +1,22 @@
-Title: Tinder Web App
-Group: 3
-Group Member:
---------------------------------------------------------------------------------\n
-Name                                |  Id
-Mesud Melaku                        | 0916/15
-Natnael Asfaw                       | 1071/15
-Natnael Kebede                      | 1067/15
-Natnael Samson                      | 1065/15
-Natnael Yonas                       | 1049/15
-Nikodimos Hunegn                    | 1094/15
+
+
+ **TItle: Tikesha Web App**  
+**Group Number:** 3  
+
+%%{init: {'themeVariables': {'tableTextSize': '16px'}}}%%
+classDiagram
+    
+    
+    class GroupMembers {
+          Name                     |   ID
+        ---------------------------
+        | Mesud Melaku             |  ETS0916/15
+        | Natnael Yonas            | ETS1049/15
+        | Natnael Samson           | ETS1065/15
+        | Natnael Kebede           | ETS1067/15
+        | Natnael Asfaw            | ETS1071/15
+        | Nikodimos Hunegn         | ETS1094/15
+    }
+
+
+
