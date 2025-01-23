@@ -25,7 +25,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
             };
 
             localStorage.setItem('userProfile', JSON.stringify(profileData));
-            window.location.href = '../public/Matches.html';
+            window.location.href = './Matches.html';
         };
 
         reader.readAsDataURL(photoInput.files[0]);
