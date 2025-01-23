@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #fdfdfd, #f4f4f4);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background: #ff5864;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-btn {
+  margin: 20px;
+  padding: 10px 20px;
+  background: #ff5864;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.main-btn:hover {
+  background: #e14b57;
+}
+
+span {
+  color: #ff5864;
+  font-weight: bold;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.member {
+  width: 280px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.member span {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.member p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #ff5864;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #333;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  .member {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .member img {
+    width: 100px;
+    height: 100px;
+  }
+}
