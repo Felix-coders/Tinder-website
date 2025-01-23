@@ -10,5 +10,5 @@ const userProfile = JSON.parse(localStorage.getItem('userProfile'));
             document.getElementById('profile-distance').textContent = userProfile.distance;
         } else {
             alert("No profile found! Please create your profile first.");
-            window.location.href = "../public/Profile-Creation.html";
+            window.location.href = "./Profile-Creation.html";
         }
