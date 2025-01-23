@@ -34,10 +34,7 @@ We appreciate all group members for their hard work and contributions:
 
 ---
 
-## :scroll: **How to Run**
-1. Clone the repository
-2. Install dependencies
-3. Run the app
+
 
 
 ## :warning: **License**
