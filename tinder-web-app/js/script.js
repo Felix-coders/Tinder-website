@@ -180,5 +180,5 @@ const userProfile = JSON.parse(localStorage.getItem('userProfile'));
             profile.src = userProfile.photo;
         } else {
             alert("No profile found! Please create your profile first.");
-            window.location.href = "../public/Profile-Creation.html";
+            window.location.href = "./Profile-Creation.html";
         }
